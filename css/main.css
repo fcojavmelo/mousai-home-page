@@ -2,6 +2,10 @@ body {
 	font-family: BebasNeue;
 }
 
+.typed {
+	font-size: 140%;
+}
+
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -32,6 +36,7 @@ body {
 }
 .container-about {
 	background-color: #EBECED;
+	margin-left: 3%;
 }
 .banner-main {
 	padding-bottom: 10%;
@@ -54,8 +59,60 @@ li.tab-menu {
 	font-family: BebasNeue;
 	src: url(../fonts/BebasNeue.otf);
 }
+@font-face {
+	font-family: Calibri;
+	src: url(../fonts/Calibri.ttf);
+}
+@font-face {
+	font-family: HelveticaNeue-Thin;
+	src: url(../fonts/HelveticaNeueLTStd Lt.otf);
+}
 
 .about-contact {
 	font-size: xx-large;
     padding-top: 2%;
 }
+.mousai-main {
+	font-family: HelveticaNeue-Thin;
+	padding-left: 3%;
+}
+.list-menu {
+	font-size: 150%
+}
+
+.footer-bar {
+	background-color: #1D2128;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #343b42;
+     border-color: #343b42; 
+}
+
+.sections {
+	font-size: 140%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.sections .col-sm-12 img {
+	width: 15%;
+}
+
+input[type=text] {
+	    font-size: 1.5rem;	
+}
+
+@media (max-width: 768px) { 
+	.slogan {
+		font-size: 300%;
+	}
+	.container-about {
+		margin-left: 0;
+	}
+	.sections img {
+		width: 30%;
+	}
+}
+
