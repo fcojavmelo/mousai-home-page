@@ -96,8 +96,8 @@ li.tab-menu {
     padding-top: 5%;
 }
 
-.sections .col-sm-12 img {
-	width: 15%;
+.sections img {
+	width: 150px;
 }
 
 input[type=text] {
@@ -112,7 +112,7 @@ input[type=text] {
 		margin-left: 0;
 	}
 	.sections img {
-		width: 30%;
+		width: 50%;
 	}
 }
 
