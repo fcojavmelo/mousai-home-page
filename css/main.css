@@ -3,9 +3,10 @@ body {
 }
 
 .typed, .section-content {
-	font-size: 12px;
-	font-family: Calibri;
-}
+    font-size: 17px;
+    font-family: Calibri;
+    padding-left: 100px;
+    padding-right: 100px;}
 
 .typed-cursor{
     opacity: 1;
@@ -35,15 +36,16 @@ body {
     font-size: 900%;
 	color: white;
 	padding-left: 5%;
-    margin-left: 5%;
+    margin-left: 2%;
+    max-width: 90%;
 }
 .container-about {
 	background-color: #EBECED;
-	margin-left: 3%;
+	margin-left: 80px;
 }
 
 .container-about h1 {
-	font-size: 210%;
+	font-size: 260%;
 }
 
 .banner-main {
@@ -56,9 +58,32 @@ body {
 .footer {
 	color: white;
 }
-li.tab-menu {
-	font-size: 130%;
+
+.copyright {
+	background-color: #1D2128;
+	margin-top: 8px;
 } 
+
+.last-row {
+	margin-bottom: 0;
+}
+
+.copyright p {
+	padding-top: 7px;
+}
+
+li.tab-menu {
+	font-size: 33px;
+} 
+
+.form-column {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+.form-control {
+	background-color: transparent;
+}
 
 @font-face {
 	font-family: BebasNeue;
@@ -74,7 +99,7 @@ li.tab-menu {
 }
 
 .about-contact {
-	font-size: xx-large;
+	font-size: 50px;
     padding-top: 2%;
 }
 
@@ -86,10 +111,38 @@ li.tab-menu {
 	font-size: 60%;
 }
 
-.mousai-logo {
-	font-family: HelveticaNeue-Thin;
-	padding-left: 3%;
+.mousai-logo-header {
+    font-family: HelveticaNeue-Thin;
+    padding-left: 3%;
+    /* padding-right: 88%; */
+    max-width: 167px;
 }
+
+.mousai-logo-header h1 {
+	margin-bottom: 0;
+}
+
+.mousai-logo-footer h1 {
+	margin-bottom: 0;
+	font-size: 40px;
+}
+
+.get-quote p {
+    font-size: 18px;
+    padding-right: 105px;
+    padding-top: 10px;
+}
+
+.mousai-logo-footer p {
+	font-size: 16px;
+}
+
+.mousai-logo-footer {
+	font-family: HelveticaNeue-Thin;
+	/*padding-left: 3%;*/
+	padding-right: 100px;
+}
+
 .list-menu {
 	font-size: 150%
 }
@@ -104,10 +157,14 @@ li.tab-menu {
      border-color: #343b42; 
 }
 
+.footer-header h3 {
+	font-size: 35px;
+}
+
 .sections {
 	font-size: 140%;
-    padding-bottom: 10%;
-    padding-top: 5%;
+    padding-bottom: 30px;
+    padding-top: 80px;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -118,40 +175,153 @@ li.tab-menu {
 
 .sections h3 {
 	margin-bottom: 20px;
+	font-size: 33px;
 }
 
 .social-icon {
-	width: 10%;
+	width: 52px;
+    /* margin: 5px; */
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 18px;
 }
+
+.social-footer {
+	margin-top: 15px;
+	/*padding-left: 138px;*/
+}
+
+.social-footer img {
+	width: 40px;
+}
+
+
 .jupiter {
-	width: 10%;
+	width: 40px;
 	vertical-align: middle;
+	padding-top: 18px;
 }
 
-input[type=text] {
-	    font-size: 1.5rem;	
+input[type=text], textarea[type=text] {
+	 font-size: 14px;
+	 color: white;
 }
 
+.form-group {
+	font-family: HelveticaNeue-Thin;
+
+}
+
+textarea.form-control {
+	font-size: 14px;
+}
+
+.about-the-team {
+	height: 450px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+     background-color: transparent; 
+     border: 0; 
+    border-bottom-color: transparent;
+}
+
+/*rules only for phone devices*/
 @media (max-width: 768px) {
-	div.mousai-logo {
-		max-width: 25%;
+
+	.get-quote p {
+		font-size: 22px;
+	}
+
+	.form-column {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.section-content {
+		font-size: 15px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.mousai-logo-header {
+		padding-right: 0;
+		font-size: 10px;
+	}
+	div.mousai-logo-header {
+		max-width: 85px;
 	} 
-	.mousai-logo h1 {
-		font-size: 130%;
+	.mousai-logo-footer h1 {
+		font-size: 200%;
 	    margin-top: 12px;
-    	margin-bottom: 0;
+    	
 	}
-	.mousai-logo  p {
-		font-size: 50%;
+
+	.mousai-logo-footer {
+		text-align: right;
+		padding-right: 10px;
 	}
+
+	.jupiter {
+		width: 55px;
+		margin-top: 10px;
+	}
+
+	.footer-header h3 {
+		text-align: left;
+		padding-left: 65px;
+	}
+
+	.mousai-logo-footer p {
+		font-size: 77%;
+	}
+
+	.mousai-logo-header h1 {
+		font-size: 200%;
+	    margin-top: 12px;
+
+    	
+	}
+
+	.typed {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.mousai-logo-header p {
+		font-size: 77%;
+	}
+
 	.slogan {
-		font-size: 300%;
+		font-size: 64px;
 	}
 	.container-about {
 		margin-left: 0;
 	}
 	.sections img {
-		width: 50%;
+		width: 40%;
+	}
+	.sections {
+		padding-bottom: 30px;
+		padding-top: 20px;
+	}
+	li.tab-menu {
+		font-size: 23px;
+	}
+	.social-footer {
+		text-align: left;
+	}
+}
+
+@media (max-width: 980px) and (min-width: 768px) {
+	.slogan {
+		font-size: 98px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.about-the-team {
+		height: 600px;
 	}
 }
 
