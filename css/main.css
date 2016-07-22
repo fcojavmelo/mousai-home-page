@@ -140,7 +140,7 @@ li.tab-menu {
 .mousai-logo-footer {
 	font-family: HelveticaNeue-Thin;
 	/*padding-left: 3%;*/
-	padding-right: 100px;
+	padding-right: 75px;
 }
 
 .list-menu {
@@ -200,6 +200,12 @@ li.tab-menu {
 	width: 40px;
 	vertical-align: middle;
 	padding-top: 18px;
+}
+
+input[type=email] {
+    font-size: 14px;
+    color: white;
+
 }
 
 input[type=text], textarea[type=text] {
@@ -322,6 +328,22 @@ textarea.form-control {
 @media (max-width: 1050px) {
 	.about-the-team {
 		height: 600px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.mousai-logo-footer {
+		text-align: center;
+	}	
+
+	.mousai-logo-footer p {
+		padding-left: 24px;
+	}
+}
+@media (max-width: 832px) and (min-width: 768px) {
+	.mousai-logo-footer {
+		padding-right: 64px;
 	}
 }
 
