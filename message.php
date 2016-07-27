@@ -19,7 +19,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "iPakito@icloud.com";
+        $recipient = "hello@mousai.io";
 
         // Set the email subject.
         $subject = $_POST["subject"];

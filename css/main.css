@@ -4,7 +4,7 @@ body {
 
 .typed, .section-content {
     font-size: 17px;
-    font-family: Calibri;
+    font-family: OpenSans-CondLight;
     padding-left: 100px;
     padding-right: 100px;}
 
@@ -30,19 +30,23 @@ body {
     100% { opacity:1; }
 }
 .slogan {
-	/*font-size: ;*/
-	font-family: BebasNeue;
-	border-left: 3px solid white;
-    font-size: 900%;
-	color: white;
-	padding-left: 5%;
+    font-family: BebasNeue;
+    border-left: 3px solid white;
+    font-size: 150px;
+    color: white;
+    /*padding-left: 100px;*/
     margin-left: 2%;
     max-width: 90%;
 }
+
 .container-about {
-	background-color: #EBECED;
-	margin-left: 80px;
+    background-color: #EBECED;
+    /* margin-left: 130px; */
+    width: 90%;
+    /* margin-top: -150px; */
+    float: right;
 }
+
 
 .container-about h1 {
 	font-size: 260%;
@@ -98,9 +102,23 @@ li.tab-menu {
 	src: url(../fonts/HelveticaNeueLTStd Lt.otf);
 }
 
+@font-face {
+	font-family: OpenSans-CondLight;
+	src: url(../fonts/OpenSans-CondLight.ttf);
+}
+
 .about-contact {
-	font-size: 50px;
+	font-size: 43px;
     padding-top: 2%;
+}
+
+.about-contact a {
+	color: black;
+}
+
+.about-contact a:hover {
+	color: #ed7161;
+	text-decoration: none;
 }
 
 .about-contact > .country {
@@ -115,7 +133,7 @@ li.tab-menu {
     font-family: HelveticaNeue-Thin;
     padding-left: 3%;
     /* padding-right: 88%; */
-    max-width: 167px;
+    max-width: 184px;
 }
 
 .mousai-logo-header h1 {
@@ -129,8 +147,19 @@ li.tab-menu {
 
 .get-quote p {
     font-size: 18px;
+    font-family: OpenSans-CondLight;
     padding-right: 105px;
     padding-top: 10px;
+}
+
+.get-quote a {
+	font-family: OpenSans-CondLight;
+	color: white;
+}
+
+.get-quote a:hover {
+		color: #ed7161;
+	text-decoration: none;
 }
 
 .mousai-logo-footer p {
@@ -158,15 +187,16 @@ li.tab-menu {
 }
 
 .footer-header h3 {
-	font-size: 35px;
+	font-size: 55px;
 }
 
 .sections {
 	font-size: 140%;
-    padding-bottom: 30px;
+   /* padding-bottom: 30px;
     padding-top: 80px;
     padding-left: 2%;
-    padding-right: 2%;
+    padding-right: 2%;*/
+    padding: 0;
 }
 
 .sections img {
@@ -179,11 +209,19 @@ li.tab-menu {
 }
 
 .social-icon {
-	width: 52px;
+    width: 40px;
     /* margin: 5px; */
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-bottom: 18px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 18px;
+    filter: gray; /* IE6-9 */
+	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.social-icon:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 .social-footer {
@@ -192,14 +230,22 @@ li.tab-menu {
 }
 
 .social-footer img {
+	filter: gray; /* IE6-9 */
+	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 	width: 40px;
+}
+
+.social-footer img:hover {
+	  filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 
 .jupiter {
-	width: 40px;
+	width: 54px;
 	vertical-align: middle;
-	padding-top: 18px;
+	/*padding-top: 21px;*/
 }
 
 input[type=email] {
@@ -238,7 +284,8 @@ textarea.form-control {
 @media (max-width: 768px) {
 
 	.get-quote p {
-		font-size: 22px;
+		font-size: 18px;
+		font-family: OpenSans-CondLight;
 	}
 
 	.form-column {
@@ -301,6 +348,12 @@ textarea.form-control {
 	.slogan {
 		font-size: 64px;
 	}
+
+/*	.embrace {
+		background-color: white;
+		margin-bottom: -40px;
+	}*/
+
 	.container-about {
 		margin-left: 0;
 	}
@@ -346,4 +399,174 @@ textarea.form-control {
 		padding-right: 64px;
 	}
 }
+
+@media (min-width: 981px) and (max-width: 1187px) {
+	.slogan {
+		font-size: 120px;
+	}
+}
+
+ul a {
+	font-size: 25px;	
+}
+
+
+
+
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 4px;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+/* =============================================================================
+  ICONS - DEMO 1
+============================================================================= */
+/**
+ * "icon-mono" class name used to indicate monochrome-type icon. Use whatever
+ * class name you want, but make sure to change it up in the markup.
+ *
+ * Example HTML:
+ *
+ * <a href="#" class="icon icon-mono facebook">facebook</a>
+ * <a href="#" class="icon icon-mono twitter">twitter</a>
+ * ...
+ */
+
+.icon-mono {
+  background: url("../img/icons1.png");
+  background-image: url("../img/icons1.svg"), none;
+  background-color: #595959;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+
+/* facebook */
+.icon-mono.facebook {
+  background-position: 0 0;
+}
+
+.icon-mono.facebook:hover {
+  background-color: #3b5998;
+  background-position: 0 -96px;
+}
+
+@media (max-width: 768px) {
+	.about-the-team {
+    height: 350px;
+	}
+	.container-about {
+		width: 100%;
+	}
+	.footer-header h3 {
+		font-size: 40px;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 20px;
+	}
+	.footer-header img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.sections img {
+    width: 30%;
+	}
+	.about-contact {
+		font-size: 33px;
+	}
+	.sections {
+    /*padding-bottom: 30px;*/
+    /*padding-top: 20px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+	.jupiter {
+		padding-top: 10px;
+		float: left;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	.about-the-team {
+    height: 430px;
+	}
+	.slogan {
+    font-size: 103px;
+	}
+	.footer-header h3 {
+		font-size: 40px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.footer-header img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.jupiter {
+		width: 40px;
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+	.slogan {
+		font-size: 130px;
+	}	
+	.footer-header h3 {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.footer-header img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.about-the-team {
+		height: 350px;
+	}
+	
+}
+
+@media (min-width: 1201px) { 
+	.slogan {
+		font-size: 160px;
+	}
+	.about-the-team {
+		height: 330px;
+	}
+	/*li.tab-menu {
+    font-size: 33px;
+    display: inline-block;
+    width: 565px;
+    float: initial;
+	}*/
+	.footer-header h3 {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.footer-header img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+@media (max-width: 1292px) and (min-width: 1201px) {
+	/*li.tab-menu {
+		width: 50%;
+		float: left;
+	}*/
+
+
+}
+
+
+
+
+
+
+
 
