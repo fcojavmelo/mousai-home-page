@@ -108,9 +108,11 @@ li.tab-menu {
 }
 
 .about-contact {
-	font-size: 43px;
+	font-family: OpenSans-CondLight;
+	font-size: 30px;
     padding-top: 2%;
 }
+
 
 .about-contact a {
 	color: black;
@@ -126,7 +128,7 @@ li.tab-menu {
 }
 
 .about-contact > .mail {
-	font-size: 60%;
+	font-size: 70%;
 }
 
 .mousai-logo-header {
@@ -134,6 +136,7 @@ li.tab-menu {
     padding-left: 3%;
     /* padding-right: 88%; */
     max-width: 184px;
+    color: white;
 }
 
 .mousai-logo-header h1 {
@@ -280,6 +283,23 @@ textarea.form-control {
     border-bottom-color: transparent;
 }
 
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #8e8b8b;
+    cursor: default;
+    background-color: #e2dfdf;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #8e8b8b;
+    cursor: default;
+    background-color: #ebeced;
+    background: linear-gradient(#e2dfdf,#ebeced);
+    border: 0;
+    border-bottom-color: transparent;
+}
+
 /*rules only for phone devices*/
 @media (max-width: 768px) {
 
@@ -349,10 +369,7 @@ textarea.form-control {
 		font-size: 64px;
 	}
 
-/*	.embrace {
-		background-color: white;
-		margin-bottom: -40px;
-	}*/
+	
 
 	.container-about {
 		margin-left: 0;
@@ -456,9 +473,15 @@ ul a {
   background-position: 0 -96px;
 }
 
+
+
+
 @media (max-width: 768px) {
+	.slogan {
+		margin-top: 100px;
+	}
 	.about-the-team {
-    height: 350px;
+    height: 500px;
 	}
 	.container-about {
 		width: 100%;
@@ -489,14 +512,19 @@ ul a {
 		padding-top: 10px;
 		float: left;
 	}
+	.embrace {
+		height: 90px;
+	}
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
 	.about-the-team {
-    height: 430px;
+    height: 515px;
 	}
 	.slogan {
     font-size: 103px;
+    margin-top: 120px;
 	}
 	.footer-header h3 {
 		font-size: 40px;
@@ -510,12 +538,19 @@ ul a {
 	.jupiter {
 		width: 40px;
 	}
+	.insta {
+		margin-left: 12px;
+	}
+		.embrace {
+		height: 100px;
+	}
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
 
 	.slogan {
 		font-size: 130px;
+		margin-top: 130px;
 	}	
 	.footer-header h3 {
 		display: inline-block;
@@ -528,12 +563,18 @@ ul a {
 	.about-the-team {
 		height: 350px;
 	}
-	
+	.insta {
+		margin-left: 12px;
+	}
+	.embrace {
+		height: 130px;
+	}
 }
 
 @media (min-width: 1201px) { 
 	.slogan {
-		font-size: 160px;
+		font-size: 150px;
+		margin-top: 150px;
 	}
 	.about-the-team {
 		height: 330px;
@@ -551,6 +592,48 @@ ul a {
 	.footer-header img {
 		display: inline-block;
 		vertical-align: middle;
+	}
+	.insta {
+		margin-left: 12px;
+	}
+	li.tab-menu {
+    font-size: 33px;
+    width: 483px;
+    display: inline-block;
+    vertical-align: middle;
+    float: inherit;
+	}
+	.compact {
+		padding-left: 115px;
+		padding-right: 115px;	
+	}
+	.embrace {
+		height: 150px;
+	}
+	
+}
+
+.nav-tabs>li>a {
+    color: black;
+}
+.nav>li>a:hover {
+    /*text-decoration: none;*/
+     background-color: transparent;
+     color: #ed7161;
+}
+.nav-tabs>li>a:hover {
+     border-color: transparent; 
+}
+
+@media (max-width: 487px) {
+	.slogan {
+		font-size: 38px;
+	}
+	.about-contact {
+		font-size: 25px;
+	}
+	.embrace {
+		height: 48px;
 	}
 }
 
